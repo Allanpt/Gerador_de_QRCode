@@ -35,4 +35,8 @@ qrInput.addEventListener('keyup', (e) => {
     if(e.key == 'Enter'){
         generateQRCode()
     }
+    if(!qrInput.value){
+        clean()
+
+    }
 })

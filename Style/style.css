@@ -71,3 +71,17 @@ button:hover{
 .container #qr_code{
     display: none;
 }
+
+@media (max-width: 460px){
+    .container {
+        height: 250px;
+        width: 300px;
+    }
+    p{
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    input, button{
+        width: 250px;
+    }
+}
