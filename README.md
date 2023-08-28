@@ -1,4 +1,4 @@
-<h1 align="center"> Tabuada </h1>
+<h1 align="center"> Gerador de QR Code </h1>
 
 <p align="center">
 Mini projeto responsivo com a utilização de JavaScript consumindo a API de QR Code. <br/>
