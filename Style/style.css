@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #34db7a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 450px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    gap: 15px;
+    transition: 0.2s;
+}
+.container.active{
+    height: 500px;
+}
+h1,p{
+    margin: 10px auto;
+}
+.qr_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, button{
+    width: 350px;
+    height: 50px;
+    border-radius: 0.3rem;
+}
+input{
+    padding-left: 15px;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+button{
+    font-size: 20px;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+    transition: 0.25s;
+    cursor: pointer;
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
+#qr_code{
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container.active #qr_code{
+    margin-top: 15px;
+    display: flex;
+    opacity: 1;
+    transition: 0.5s;
+}
+.container #qr_code{
+    display: none;
+}
